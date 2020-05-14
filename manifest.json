@@ -4,19 +4,34 @@
     "version": "0.0.0",
 
     "description": "Just like-a Mama Eccli used to make",
+    "homepage_url": "https://github.com/ConorMarco/MozzarellaFirefox",
 
     "icons": {
-        "48": "icons/breck-48.png"
+        "48": "images/icons/breck-48.png"
     },
 
     "content_scripts": [
         {
+            "matches": ["<all_urls>"],
+            "js": ["content_scripts/mozzarellafy.js"]
         }
     ],
+
+
     "background": {
         "scripts": []
     },
     
     "permissions": [
+        "activeTab"
+    ],
+
+    "browser_action": {
+        "default_icon": "images/icons/breck-48.png",
+        "default_title": "MOZZARELLA!"
+    },
+
+    "web_accessible_resources": [
+        "images/mozzarellas/*"
     ]
 }
