@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Breck Mozzarella Foxfire",
+    "version": "0.0.0",
+
+    "description": "Just like-a Mama Eccli used to make",
+
+    "icons": {
+        "48": "icons/breck-48.png"
+    },
+
+    "content_scripts": [
+        {
+        }
+    ],
+    "background": {
+        "scripts": []
+    },
+    
+    "permissions": [
+    ]
+}
