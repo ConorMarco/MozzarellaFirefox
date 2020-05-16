@@ -13,8 +13,7 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["content_scripts/mozzarellafy.js", "content_scripts/foxfire.js"],
-            "css": ["content_scripts/foxfire.css"]
+            "js": ["content_scripts/mozzarellafy.js", "content_scripts/foxfire.js"]
         }
     ],
     
