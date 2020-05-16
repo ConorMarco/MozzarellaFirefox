@@ -13,14 +13,10 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["content_scripts/mozzarellafy.js"]
+            "js": ["content_scripts/mozzarellafy.js", "content_scripts/foxfire.js"],
+            "css": ["content_scripts/foxfire.css"]
         }
     ],
-
-
-    "background": {
-        "scripts": []
-    },
     
     "permissions": [
         "activeTab"
@@ -28,10 +24,11 @@
 
     "browser_action": {
         "default_icon": "images/icons/breck-48.png",
-        "default_title": "MOZZARELLA!"
+        "default_title": "MOZZARELLA!",
+        "default_popup": "https://biblehub.com/judges/15-4.htm"
     },
 
     "web_accessible_resources": [
-        "images/mozzarellas/*"
+        "images/*"
     ]
 }
